@@ -1,3 +1,38 @@
-Algoritmo sin_titulo
+Algoritmo ejercicio10
+	definir edad1 Como Entero
+	definir nombre1 Como Caracter
+	
+	definir edad2 Como Entero
+	definir nombre2 Como Caracter
+	
+	definir edad3 Como Entero
+	definir nombre3 Como Caracter
+	
+	
+	Escribir "colocar nombre y edad de la 1ra persona:"
+	leer edad1
+	leer nombre1
+	
+	Escribir "colocar nombre y edad de la 2da persona:"
+	leer edad2
+	leer nombre2
+	
+	Escribir "colocar nombre y edad de la 3era persona:"	
+	leer edad3
+	leer nombre3
+	
+	Si (edad1<=edad2) & (edad1<=edad3) Entonces
+		Escribir "La persona con menor edad es:" nombre1 " con " edad1 " años"
+	SiNo
+		Si (edad2<=edad1) & (edad2<=edad3) Entonces
+			Escribir "La persona con menor edad es:" nombre2 " con " edad2 " años"
+		SiNo
+			Si (edad3<=edad1) & (edad3<=edad2) Entonces
+				Escribir "La persona con menor edad es:" nombre3 " con " edad3 " años"
+			SiNo
+				Escribir "Revisar"
+			Fin Si
+		Fin Si
+	Fin Si
 	
 FinAlgoritmo
